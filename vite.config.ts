@@ -59,7 +59,7 @@ export default defineConfig((config) => {
           v3_lazyRouteDiscovery: true,
         },
         ...(isVercelBuild && {
-          serverBuildFile: 'api/index.js',
+          serverBuildPath: 'build/server/index.js',
         }),
       }),
       UnoCSS(),
