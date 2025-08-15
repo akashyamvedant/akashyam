@@ -42,10 +42,10 @@ export const links: LinksFunction = () => [
 ];
 
 const inlineThemeCode = stripIndents`
-  setTutorialKitTheme();
+  setAkashyamTheme();
 
-  function setTutorialKitTheme() {
-    let theme = localStorage.getItem('bolt_theme');
+  function setAkashyamTheme() {
+    let theme = localStorage.getItem('akashyam_theme');
 
     if (!theme) {
       theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';

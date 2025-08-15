@@ -9,6 +9,9 @@ import * as dotenv from 'dotenv';
 dotenv.config();
 
 export default defineConfig((config) => {
+  // Check if we're building for Vercel or in CI (disable Cloudflare features)
+  const isVercelBuild = process.env.VERCEL || process.env.CI;
+  
   return {
     define: {
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
@@ -40,7 +43,8 @@ export default defineConfig((config) => {
           return null;
         },
       },
-      config.mode !== 'test' && remixCloudflareDevProxy(),
+      // Only enable Cloudflare dev proxy for local development, not on Vercel/CI
+      config.mode !== 'test' && !isVercelBuild && remixCloudflareDevProxy(),
       remixVitePlugin({
         future: {
           v3_fetcherPersist: true,

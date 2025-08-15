@@ -1,18 +1,15 @@
-# bolt.diy
+# AKASHYAM
 
-[![bolt.diy: AI-Powered Full-Stack Web Development in the Browser](./public/social_preview_index.jpg)](https://bolt.diy)
+[![AKASHYAM: AI-Powered Full-Stack Web Development in the Browser](./public/social_preview_index.jpg)](https://akashyam.com)
 
-Welcome to bolt.diy, the official open source version of Bolt.new, which allows you to choose the LLM that you use for each prompt! Currently, you can use OpenAI, Anthropic, Ollama, OpenRouter, Gemini, LMStudio, Mistral, xAI, HuggingFace, DeepSeek, or Groq models - and it is easily extended to use any other model supported by the Vercel AI SDK! See the instructions below for running this locally and extending it to include more models.
-
------
-Check the [bolt.diy Docs](https://stackblitz-labs.github.io/bolt.diy/) for more offical installation instructions and more informations.
+Welcome to AKASHYAM, an advanced AI-powered development platform that allows you to choose the LLM that you use for each prompt! Currently, you can use OpenAI, Anthropic, Ollama, OpenRouter, Gemini, LMStudio, Mistral, xAI, HuggingFace, DeepSeek, A4F, or Groq models - and it is easily extended to use any other model supported by the Vercel AI SDK! See the instructions below for running this locally and extending it to include more models.
 
 -----
-Also [this pinned post in our community](https://thinktank.ottomator.ai/t/videos-tutorial-helpful-content/3243) has a bunch of incredible resources for running and deploying bolt.diy yourself!
+AKASHYAM is built on the foundation of open-source AI development tools and enhanced with additional providers like A4F for expanded model access.
 
-We have also launched an experimental agent called the "bolt.diy Expert" that can answer common questions about bolt.diy. Find it here on the [oTTomator Live Agent Studio](https://studio.ottomator.ai/).
+-----
 
-bolt.diy was originally started by [Cole Medin](https://www.youtube.com/@ColeMedin) but has quickly grown into a massive community effort to build the BEST open source AI coding assistant!
+AKASHYAM provides a comprehensive AI-powered development environment that enables rapid prototyping and full-stack application development directly in your browser.
 
 ## Table of Contents
 
@@ -26,17 +23,19 @@ bolt.diy was originally started by [Cole Medin](https://www.youtube.com/@ColeMed
 - [Roadmap](#roadmap)
 - [FAQ](#faq)
 
-## Join the community
+## Project Overview
 
-[Join the bolt.diy community here, in the oTTomator Think Tank!](https://thinktank.ottomator.ai)
+AKASHYAM is a powerful AI development platform that provides:
+- Multi-LLM support including the latest A4F integration
+- Browser-based development environment
+- Real-time code generation and editing
+- Integrated terminal and preview capabilities
 
-## Project management
+## Project Management
 
-Bolt.diy is a community effort! Still, the core team of contributors aims at organizing the project in way that allows
-you to understand where the current areas of focus are.
+AKASHYAM focuses on providing the best AI-powered development experience. 
 
-If you want to know what we are working on, what we are planning to work on, or if you want to contribute to the
-project, please check the [project management guide](./PROJECT.md) to get started easily.
+If you want to contribute to the project, please check the [project management guide](./PROJECT.md) to get started easily.
 
 ## Requested Additions
 
@@ -110,7 +109,7 @@ project, please check the [project management guide](./PROJECT.md) to get starte
 
 If you're new to installing software from GitHub, don't worry! If you encounter any issues, feel free to submit an "issue" using the provided links or improve this documentation by forking the repository, editing the instructions, and submitting a pull request. The following instruction will help you get the stable branch up and running on your local machine in no time.
 
-Let's get you up and running with the stable version of Bolt.DIY!
+Let's get you up and running with AKASHYAM!
 
 ## Quick Download
 
@@ -145,7 +144,7 @@ Node.js is required to run the application.
 
 ## Running the Application
 
-You have two options for running Bolt.DIY: directly on your machine or using Docker.
+You have two options for running AKASHYAM: directly on your machine or using Docker.
 
 ### Option 1: Direct Installation (Recommended for Beginners)
 
@@ -196,7 +195,7 @@ This option requires some familiarity with Docker but provides a more isolated e
 
 ### Adding Your API Keys
 
-Setting up your API keys in Bolt.DIY is straightforward:
+Setting up your API keys in AKASHYAM is straightforward:
 
 1. Open the home page (main interface)
 2. Select your desired provider from the dropdown menu
