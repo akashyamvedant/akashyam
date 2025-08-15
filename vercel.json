@@ -1,8 +1,8 @@
 {
-  "version": 2,
   "buildCommand": "pnpm run build:vercel",
   "installCommand": "pnpm install",
   "outputDirectory": "build/client",
+
   "routes": [
     {
       "handle": "filesystem"
@@ -10,12 +10,6 @@
     {
       "src": "/(.*)",
       "dest": "/api/index.js"
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/api/index.js"
     }
   ]
 }
