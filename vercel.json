@@ -1,5 +1,17 @@
 {
-  "framework": "remix",
   "buildCommand": "pnpm run build:vercel",
-  "installCommand": "pnpm install"
+  "installCommand": "pnpm install",
+  "outputDirectory": "build/client",
+  "functions": {
+    "server.js": "18.x"
+  },
+  "routes": [
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/server.js"
+    }
+  ]
 }
