@@ -3,11 +3,6 @@
   "buildCommand": "pnpm run build:vercel",
   "installCommand": "pnpm install",
   "outputDirectory": "build/client",
-  "functions": {
-    "api/index.js": {
-      "runtime": "nodejs"
-    }
-  },
   "routes": [
     {
       "handle": "filesystem"
