@@ -2,13 +2,18 @@
   "buildCommand": "pnpm run build:vercel",
   "installCommand": "pnpm install",
   "outputDirectory": "build/client",
+  "functions": {
+    "api/index.js": {
+      "runtime": "nodejs18.x"
+    }
+  },
   "routes": [
     {
       "handle": "filesystem"
     },
     {
       "src": "/(.*)",
-      "dest": "/build/server/index.js"
+      "dest": "/api"
     }
   ]
 }
