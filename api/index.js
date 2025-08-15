@@ -1,8 +1,8 @@
 // Vercel serverless function for AKASHYAM Remix app
 const { createRequestHandler } = require("@remix-run/node");
 
-// Import the server build
-const build = require("./build/server/index.js");
+// Import the server build - correct path relative to api directory
+const build = require("../build/server/index.js");
 
 // Create the request handler
 const handleRequest = createRequestHandler({
