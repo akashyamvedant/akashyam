@@ -19,6 +19,12 @@ export default defineConfig((config) => {
     build: {
       target: 'esnext',
     },
+    ssr: {
+      ...(isVercelBuild && {
+        noExternal: ['react-dom', '@remix-run/node', 'react-dom/server'],
+        target: 'node',
+      }),
+    },
     plugins: [
       nodePolyfills({
         include: ['buffer', 'process', 'util', 'stream'],
@@ -52,6 +58,9 @@ export default defineConfig((config) => {
           v3_throwAbortReason: true,
           v3_lazyRouteDiscovery: true,
         },
+        ...(isVercelBuild && {
+          serverBuildFile: 'api/index.js',
+        }),
       }),
       UnoCSS(),
       tsconfigPaths(),

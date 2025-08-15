@@ -13,7 +13,8 @@
   "scripts": {
     "deploy": "npm run build && wrangler pages deploy",
     "build": "remix vite:build",
-    "build:vercel": "VERCEL=1 remix vite:build",
+    "build:vercel": "cross-env VERCEL=1 remix vite:build && pnpm run postbuild:vercel",
+    "postbuild:vercel": "node -e \"const fs = require('fs'); const path = require('path'); fs.mkdirSync('api', { recursive: true }); fs.copyFileSync('build/server/api/index.js', 'api/index.js'); console.log('✅ Server function copied to api/index.js');\"",
     "dev": "node pre-start.cjs  && remix vite:dev",
     "test": "vitest --run",
     "test:watch": "vitest",
